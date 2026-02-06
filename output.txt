@@ -1,0 +1,15 @@
+Based on the following document, answer the question:
+
+Based on the provided document, the author of the overall course material or textbook snippet is **not explicitly named**.
+
+However, the document lists multiple authors for the reference texts used:
+
+**Primary/Textbook Authors Listed (likely required reading):**
+*   hri, Afshin Rostamizadeh, and Ameet Talwalkar
+*   Tom Mitchell
+*   Stephen Marsland
+
+**Reference Book Authors Listed:**
+*   Charu C. Aggarwal (listed twice)
+*   Kevin P. Murphy
+*   Jiawei Han, Micheline Kambers, and JianPei
