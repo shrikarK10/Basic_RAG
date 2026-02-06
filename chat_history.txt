@@ -1,24 +1,13 @@
-Q: Explain clustering
+Q: What is a neural network
 A: I cannot find the answer in the document.
 ----------------------------------------
-Q: Explain k-means algorithm
-A: The K-means clustering algorithm uses exemplars to create clusters of similar data points. Exemplars can be either centroids, which find a center of mass based on a chosen distance metric, or medoids, which find the most centrally located data point. The most commonly used centroid is the arithmetic mean, which minimizes the squared Euclidean distance to all other points.
+Q: What is a ANN
+A: Artificial Neural Networks (ANN) can be represented as a weighted directed graph where artificial neurons are the nodes and the connections between neuron outputs and inputs are directed edges with weights. ANNs receive input signals from external sources as patterns or images in the form of vectors, denoted as x(n) for each input. These inputs are then multiplied by their corresponding weights, which represent the strength of the interconnection between neurons and are crucial for the ANN to solve a specific problem.
 ----------------------------------------
-Q: Layers in Neural Networks
-A: I cannot find the answer in the document.
-----------------------------------------
-Q: Architecture of a Neural Network
-A: I cannot find the answer in the document.
-----------------------------------------
-Q: Architecture of a Artifical  Neural Network
-A: I cannot find the answer in the document.
-----------------------------------------
-Q: The architecture of an artificial neural network
-A: I cannot find the answer in the document.
-----------------------------------------
-Q: Advantages of Artificial Neural Network (ANN) 
-A: I cannot find the answer in the document.
-----------------------------------------
-Q: Advantages of Artificial Neural Network (ANN) 
-A: I cannot find the answer in the document.
+Q: Different layers in ANN
+A: The different layers in an Artificial Neural Network (ANN) are:
+
+*   **Input Layer:** Accepts inputs in various formats.
+*   **Hidden Layer:** Located between the input and output layers, it performs calculations to find hidden features and patterns.
+*   **Output Layer:** Conveys the final output after the input goes through transformations in the hidden layer.
 ----------------------------------------

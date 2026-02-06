@@ -1,162 +1,107 @@
-2026-02-06 11:23:55,972 - INFO - Read 243723 characters from PDF.
-2026-02-06 11:23:56,000 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2026-02-06 11:23:56,220 - INFO -  Starting ingestion of 305 chunks...
-2026-02-06 11:23:57,794 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 11:23:58,547 - INFO -    Indexed batch 1/16
-2026-02-06 11:24:02,038 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 11:24:02,789 - INFO -    Indexed batch 2/16
-2026-02-06 11:24:06,315 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 11:24:07,503 - INFO -    Indexed batch 3/16
-2026-02-06 11:24:11,005 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 11:24:12,200 - INFO -    Indexed batch 4/16
-2026-02-06 11:24:15,686 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 11:24:16,692 - INFO -    Indexed batch 5/16
-2026-02-06 11:24:19,041 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:19,042 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 40.896897995s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}
-2026-02-06 11:24:19,043 - ERROR -  Failed to ingest batch 100: list index out of range in add.
-2026-02-06 11:24:19,182 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:19,183 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 40.755770912s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-embedding-1.0', 'location': 'global'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}
-2026-02-06 11:24:19,184 - ERROR -  Failed to ingest batch 120: list index out of range in add.
-2026-02-06 11:24:19,491 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:19,492 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 40.447655655s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}
-2026-02-06 11:24:19,492 - ERROR -  Failed to ingest batch 140: list index out of range in add.
-2026-02-06 11:24:19,660 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:19,661 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 40.279175669s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}
-2026-02-06 11:24:19,661 - ERROR -  Failed to ingest batch 160: list index out of range in add.
-2026-02-06 11:24:19,950 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:19,951 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 39.99496247s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
-2026-02-06 11:24:19,951 - ERROR -  Failed to ingest batch 180: list index out of range in add.
-2026-02-06 11:24:20,142 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:20,143 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 39.798886491s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
-2026-02-06 11:24:20,144 - ERROR -  Failed to ingest batch 200: list index out of range in add.
-2026-02-06 11:24:20,405 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:20,405 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 39.535021706s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
-2026-02-06 11:24:20,406 - ERROR -  Failed to ingest batch 220: list index out of range in add.
-2026-02-06 11:24:20,619 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:20,620 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 39.317614412s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
-2026-02-06 11:24:20,620 - ERROR -  Failed to ingest batch 240: list index out of range in add.
-2026-02-06 11:24:20,849 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:20,850 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 39.090122821s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
-2026-02-06 11:24:20,850 - ERROR -  Failed to ingest batch 260: list index out of range in add.
-2026-02-06 11:24:21,197 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:21,199 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 38.744324111s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}
-2026-02-06 11:24:21,200 - ERROR -  Failed to ingest batch 280: list index out of range in add.
-2026-02-06 11:24:21,314 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:24:21,316 - ERROR -  Embedding API Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 100, model: gemini-embedding-1.0\nPlease retry in 38.624830775s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerMinutePerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '100'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}
-2026-02-06 11:24:21,317 - ERROR -  Failed to ingest batch 300: list index out of range in add.
-2026-02-06 11:24:21,317 - INFO -  Ingestion Complete!
-2026-02-06 11:24:59,031 - INFO - User query: what is machine learning?
-2026-02-06 11:24:59,031 - INFO -  Searching for: 'what is machine learning?'
-2026-02-06 11:24:59,462 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 11:24:59,502 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 11:24:59,614 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
-2026-02-06 11:24:59,616 - ERROR -  Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 11:25:51,812 - INFO - Read 243723 characters from PDF.
-2026-02-06 11:25:51,838 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2026-02-06 11:25:52,655 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
-2026-02-06 11:28:03,317 - INFO - User query: what is machine learning?
-2026-02-06 11:28:03,317 - INFO -  Searching for: 'what is machine learning?'
-2026-02-06 11:28:03,770 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 11:28:03,804 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 11:28:04,319 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 429 Too Many Requests"
-2026-02-06 11:28:04,320 - ERROR -  Generation Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 55.852881669s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}
-2026-02-06 11:29:00,784 - INFO - User query: exit
-2026-02-06 11:29:00,784 - INFO - User exited the chat.
-2026-02-06 12:01:18,190 - INFO - Read 243723 characters from PDF.
-2026-02-06 12:01:18,212 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2026-02-06 12:01:18,783 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
-2026-02-06 12:01:30,693 - INFO - User query: Explain Clustering
-2026-02-06 12:01:30,693 - INFO -  Searching for: 'Explain Clustering'
-2026-02-06 12:01:31,153 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:01:31,189 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:01:31,700 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 429 Too Many Requests"
-2026-02-06 12:01:31,701 - ERROR -  Generation Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 28.427150578s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}
-2026-02-06 12:03:08,711 - INFO - User query: exit
-2026-02-06 12:03:08,712 - INFO - User exited the chat.
-2026-02-06 12:05:13,537 - INFO - Read 243723 characters from PDF.
-2026-02-06 12:05:13,566 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2026-02-06 12:05:13,788 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
-2026-02-06 12:05:27,933 - INFO - User query: Explain clustering
-2026-02-06 12:05:27,933 - INFO -  Searching for: 'Explain clustering'
-2026-02-06 12:05:28,373 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:05:28,408 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:05:28,523 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
-2026-02-06 12:05:28,526 - ERROR -  Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 12:07:07,497 - INFO - User query: Explain clustering
-2026-02-06 12:07:07,497 - INFO -  Searching for: 'Explain clustering'
-2026-02-06 12:07:07,952 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:07:07,966 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:07:08,079 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
-2026-02-06 12:07:08,081 - ERROR -  Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 12:07:20,886 - INFO - User query: Explain clustering
-2026-02-06 12:07:20,886 - INFO -  Searching for: 'Explain clustering'
-2026-02-06 12:07:21,326 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:07:21,336 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:07:21,447 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
-2026-02-06 12:07:21,448 - ERROR -  Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-2026-02-06 12:07:24,322 - INFO - User query: exit
-2026-02-06 12:07:24,323 - INFO - User exited the chat.
-2026-02-06 12:07:31,828 - INFO - Read 243723 characters from PDF.
-2026-02-06 12:07:31,852 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2026-02-06 12:07:32,140 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
-2026-02-06 12:07:49,572 - INFO - Backing off send_request(...) for 1.0s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
-2026-02-06 12:08:33,831 - INFO - User query: exit
-2026-02-06 12:08:33,832 - INFO - User exited the chat.
-2026-02-06 12:08:47,196 - INFO - Read 243723 characters from PDF.
-2026-02-06 12:08:47,218 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2026-02-06 12:08:47,520 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
-2026-02-06 12:08:51,883 - INFO - User query: Explain clustering
-2026-02-06 12:08:51,883 - INFO -  Searching for: 'Explain clustering'
-2026-02-06 12:08:52,321 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:08:52,363 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:08:53,400 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:08:53,402 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
-2026-02-06 12:09:18,908 - INFO - User query: Explain k-means algorithm
-2026-02-06 12:09:18,908 - INFO -  Searching for: 'Explain k-means algorithm'
-2026-02-06 12:09:19,397 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:09:19,410 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:09:20,477 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:09:20,480 - INFO - GEMINI ANSWER: The K-means clustering algorithm uses exemplars to create clusters of similar data points. Exemplars can be either centroids, which find a center of mass based on a chosen distance metric, or medoids, which find the most centrally located data point. The most commonly used centroid is the arithmetic mean, which minimizes the squared Euclidean distance to all other points.
-2026-02-06 12:12:00,112 - INFO - User query: Layers in Neural Networks
-2026-02-06 12:12:00,112 - INFO -  Searching for: 'Layers in Neural Networks'
-2026-02-06 12:12:00,562 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:12:00,580 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:12:01,748 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:12:01,751 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
-2026-02-06 12:12:21,600 - INFO - User query: Architecture of a Neural Network
-2026-02-06 12:12:21,601 - INFO -  Searching for: 'Architecture of a Neural Network'
-2026-02-06 12:12:22,090 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:12:22,108 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:12:23,115 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:12:23,119 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
-2026-02-06 12:12:40,287 - INFO - User query: Architecture of a Artifical  Neural Network
-2026-02-06 12:12:40,287 - INFO -  Searching for: 'Architecture of a Artifical  Neural Network'
-2026-02-06 12:12:40,716 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:12:40,738 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:12:42,190 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:12:42,193 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
-2026-02-06 12:13:22,422 - INFO - User query: The architecture of an artificial neural network
-2026-02-06 12:13:22,423 - INFO -  Searching for: 'The architecture of an artificial neural network'
-2026-02-06 12:13:22,845 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:13:22,853 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:13:23,770 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:13:23,772 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
-2026-02-06 12:13:46,138 - INFO - User query: Advantages of Artificial Neural Network (ANN) 
-2026-02-06 12:13:46,139 - INFO -  Searching for: 'Advantages of Artificial Neural Network (ANN) '
-2026-02-06 12:13:46,570 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:13:46,585 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:13:47,429 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:13:47,432 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
-2026-02-06 12:15:48,307 - INFO - User query: exit
-2026-02-06 12:15:48,307 - INFO - User exited the chat.
-2026-02-06 12:15:54,013 - INFO - Read 243723 characters from PDF.
-2026-02-06 12:15:54,035 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2026-02-06 12:15:54,358 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
-2026-02-06 12:16:01,761 - INFO - User query: Advantages of Artificial Neural Network (ANN) 
-2026-02-06 12:16:01,761 - INFO -  Searching for: 'Advantages of Artificial Neural Network (ANN) '
-2026-02-06 12:16:02,203 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
-2026-02-06 12:16:02,235 - INFO - AFC is enabled with max remote calls: 10.
-2026-02-06 12:16:03,142 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
-2026-02-06 12:16:03,146 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
-2026-02-06 12:17:40,273 - INFO - User query: exit
-2026-02-06 12:17:40,274 - INFO - User exited the chat.
+2026-02-06 12:23:29,796 - INFO - Read 243723 characters from PDF.
+2026-02-06 12:23:29,817 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-06 12:23:30,756 - INFO -  Starting ingestion of 305 chunks...
+2026-02-06 12:23:32,252 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:23:33,053 - INFO -    Indexed batch 1/31
+2026-02-06 12:23:44,521 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:23:46,780 - INFO -    Indexed batch 2/31
+2026-02-06 12:23:58,231 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:23:58,735 - INFO -    Indexed batch 3/31
+2026-02-06 12:24:10,213 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:24:10,806 - INFO -    Indexed batch 4/31
+2026-02-06 12:24:22,258 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:24:22,953 - INFO -    Indexed batch 5/31
+2026-02-06 12:24:34,425 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:24:34,937 - INFO -    Indexed batch 6/31
+2026-02-06 12:24:46,377 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:24:46,959 - INFO -    Indexed batch 7/31
+2026-02-06 12:24:58,436 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:24:59,008 - INFO -    Indexed batch 8/31
+2026-02-06 12:25:10,466 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:25:11,321 - INFO -    Indexed batch 9/31
+2026-02-06 12:25:22,807 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:25:23,379 - INFO -    Indexed batch 10/31
+2026-02-06 12:25:34,853 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:25:35,423 - INFO -    Indexed batch 11/31
+2026-02-06 12:25:46,904 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:25:47,620 - INFO -    Indexed batch 12/31
+2026-02-06 12:25:59,082 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:26:00,021 - INFO -    Indexed batch 13/31
+2026-02-06 12:26:11,502 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:26:12,350 - INFO -    Indexed batch 14/31
+2026-02-06 12:26:23,840 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:26:24,515 - INFO -    Indexed batch 15/31
+2026-02-06 12:26:35,993 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:26:37,736 - INFO -    Indexed batch 16/31
+2026-02-06 12:26:49,942 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:26:50,578 - INFO -    Indexed batch 17/31
+2026-02-06 12:27:02,328 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:27:02,897 - INFO -    Indexed batch 18/31
+2026-02-06 12:27:14,385 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:27:15,222 - INFO -    Indexed batch 19/31
+2026-02-06 12:27:26,686 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:27:27,189 - INFO -    Indexed batch 20/31
+2026-02-06 12:27:38,642 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:27:39,727 - INFO -    Indexed batch 21/31
+2026-02-06 12:27:51,187 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:27:51,875 - INFO -    Indexed batch 22/31
+2026-02-06 12:28:03,329 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:28:03,934 - INFO -    Indexed batch 23/31
+2026-02-06 12:28:15,413 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:28:16,025 - INFO -    Indexed batch 24/31
+2026-02-06 12:28:27,494 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:28:28,028 - INFO -    Indexed batch 25/31
+2026-02-06 12:28:39,486 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:28:40,544 - INFO -    Indexed batch 26/31
+2026-02-06 12:28:52,260 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:28:52,866 - INFO -    Indexed batch 27/31
+2026-02-06 12:29:04,368 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:29:05,063 - INFO -    Indexed batch 28/31
+2026-02-06 12:29:15,883 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
+2026-02-06 12:29:15,885 - WARNING -  Retry 1/3 for batch 280 after error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-1.0\nPlease retry in 44.00835141s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '1000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}} in add.
+2026-02-06 12:29:36,452 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
+2026-02-06 12:29:36,452 - WARNING -  Retry 2/3 for batch 280 after error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-1.0\nPlease retry in 23.426955274s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '1000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}} in add.
+2026-02-06 12:29:56,834 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
+2026-02-06 12:29:56,835 - ERROR -  Failed to ingest batch 280 after 3 retries: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/embed_content_free_tier_requests, limit: 1000, model: gemini-embedding-1.0\nPlease retry in 3.045817834s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/embed_content_free_tier_requests', 'quotaId': 'EmbedContentRequestsPerDayPerUserPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-embedding-1.0'}, 'quotaValue': '1000'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}} in add.
+2026-02-06 12:29:56,836 - ERROR -  STOPPING INGESTION - Database would be corrupted!
+2026-02-06 12:32:22,633 - INFO - User query: What a neural network
+2026-02-06 12:32:22,633 - INFO -  Searching for: 'What a neural network'
+2026-02-06 12:32:23,254 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:32:23,297 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:32:23,480 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-06 12:32:23,481 - ERROR -  Generation Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite\nPlease retry in 36.39712921s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-lite'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-lite'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-lite'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}
+2026-02-06 12:33:02,800 - INFO - User query: What a neural network
+2026-02-06 12:33:02,800 - INFO -  Searching for: 'What a neural network'
+2026-02-06 12:33:03,260 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:33:03,275 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:33:03,387 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-06 12:33:03,399 - ERROR -  Generation Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-lite\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-lite\nPlease retry in 56.48584989s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash-lite', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-lite'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-lite'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}
+2026-02-06 12:33:07,274 - INFO - User query: exit
+2026-02-06 12:33:07,274 - INFO - User exited the chat.
+2026-02-06 12:33:25,058 - INFO - Read 243723 characters from PDF.
+2026-02-06 12:33:25,085 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-06 12:33:25,346 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
+2026-02-06 12:33:36,852 - INFO - User query: What is a neural network
+2026-02-06 12:33:36,852 - INFO -  Searching for: 'What is a neural network'
+2026-02-06 12:33:37,308 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:33:37,358 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:33:38,333 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:33:38,337 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:33:59,077 - INFO - User query: What is a ANN
+2026-02-06 12:33:59,077 - INFO -  Searching for: 'What is a ANN'
+2026-02-06 12:33:59,503 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:33:59,516 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:34:00,638 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:34:00,639 - INFO - GEMINI ANSWER: Artificial Neural Networks (ANN) can be represented as a weighted directed graph where artificial neurons are the nodes and the connections between neuron outputs and inputs are directed edges with weights. ANNs receive input signals from external sources as patterns or images in the form of vectors, denoted as x(n) for each input. These inputs are then multiplied by their corresponding weights, which represent the strength of the interconnection between neurons and are crucial for the ANN to solve a specific problem.
+2026-02-06 12:34:46,577 - INFO - User query: Different layers in ANN
+2026-02-06 12:34:46,578 - INFO -  Searching for: 'Different layers in ANN'
+2026-02-06 12:34:47,016 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:34:47,032 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:34:48,278 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:34:48,280 - INFO - GEMINI ANSWER: The different layers in an Artificial Neural Network (ANN) are:
+
+*   **Input Layer:** Accepts inputs in various formats.
+*   **Hidden Layer:** Located between the input and output layers, it performs calculations to find hidden features and patterns.
+*   **Output Layer:** Conveys the final output after the input goes through transformations in the hidden layer.
+2026-02-06 12:37:57,778 - INFO - User query: exit
+2026-02-06 12:37:57,778 - INFO - User exited the chat.

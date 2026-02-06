@@ -1,53 +1,356 @@
-Query: Advantages of Artificial Neural Network (ANN) 
+Query: What a neural network
 Retrieved Context:
-cation of a case. 
-(i) The Results are Simplistic 
-The interpretation of results summarized in classification or regression trees is usually fairly simple. The 
-simplicity of results helps in the following ways. 
- It allows for the rapid classification of new observations. That’s because it is much simpler to 
-evaluate just one or two logical conditions than to compute scores using complex nonlinear 
-equations for each group. 
- It can often result in a simpler model which  explains why the observations are either classified 
-or predicted in a certain way. For instance, business problems are much easier to explain with 
-if-then statements than with complex nonlinear equations. 
-(ii) Classification and Regression Trees are Nonparametric & Nonlinear 
-The results from classification and regression trees can be summarized in simplistic if -then conditions. 
-This negates the need for the following implicit assumptions. 
- The predictor variables and the dependent variable are linear. 
- Th
+asing day by day. It means that 
+artificial neural networks will turn into an irreplaceable part of our lives progressively important.” 
+ 
+How do artificial neural networks work? 
+Artificial Neural Network can be best represented as a weighted directed graph, where the artificial 
+neurons form the nodes. The association between the neuron s outputs and neuron inputs can be viewed as the 
+directed edges with weights. The Artificial Neural Network receives the input signal from the external source in the 
+form of a pattern and image in the form of a vector. These inputs are then mathematically assigned by the notations 
+x(n) for every n number of inputs. 
+ 44 
+ 
+ 
+ 
+Afterward, each of the input is multiplied by its corresponding weights ( these  weights are the details 
+utilized by the artificial neural networks to solve a specific problem ). In general terms, these weights normally 
+represent the strength of the interconnection between neurons inside the artificial neural network. All t
 
 ---
 
-ession trees can be summarized in simplistic if -then conditions. 
-This negates the need for the following implicit assumptions. 
- The predictor variables and the dependent variable are linear. 
- The predictor variables and the dependent variable follow some specific nonlinear link function. 
- The predictor variables and the dependent variable are monotonic. 
-Since there is no need for such implicit assumptions, classification and regression tree methods a re well 
-suited to data mining. This is because there is very little knowledge or assumptions that can be made 
-beforehand about how the different variables are related. 
-As a result, classification and regression trees can actually reveal relationships betwe en these variables 
-that would not have been possible using other techniques. 
-(iii) Classification and Regression Trees Implicitly Perform Feature Selection 
-Feature selection or variable screening is an important part of analytics. When we use decision tree s, 
-the top few
+both the inputs are "Off," then we get "Off" in output. Here the output depends upon input. 
+Our brain does not perform the same task. The outputs to inputs r elationship keep changing because of the neurons 
+in our brain, which are "learning." 
+ 
+The architecture of an artificial neural network: 
+ 
+ 
+ 
+Input Layer: 
+As the name suggests, it accepts inputs in several different formats provided by the programmer.  
+ 
+Hidden Layer: 
+The hidden layer presents in-between input and output layers. It performs all the calculations to find 
+hidden features and patterns. 
+ 
+Output Layer: 
+The input goes through a series of transformations using the hidden layer, which finally resul ts in output 
+that is conveyed using this layer. 
+ 
+The artificial neural network takes input and computes the weighted sum of the inputs and includes a bias. This 
+computation is represented in the form of a transfer function. 
+ 
+ 
+ 
+It determines weighted total  is passed as an input to an activation function to pr
 
 ---
 
 . 
-(iii) Classification and Regression Trees Implicitly Perform Feature Selection 
-Feature selection or variable screening is an important part of analytics. When we use decision tree s, 
-the top few nodes on which the tree is split are the most important variables within the set. As a result, 
-feature selection gets performed automatically and we don’t need to do it again. 
-Limitations of Classification and Regression Trees 
-31 
+ 41 
  
-Classification and regression tree tutorials, as well as classification and regression tree ppts, exist in 
-abundance. This is a testament to the popularity of these decision trees and how frequently they are 
-used. However, these decision trees are not without their disadvantages. 
-There are many classification and regression trees examples where the use of a decision tree has not 
-led to the optimal result. Here are some of the limitations of classification and regression trees. 
-(i) Overfitting 
-Overfitting occurs when the tree takes into account a lot of
+ 
+ 
+The given figure illustrates the typical diagram of Biological Neural Network.  
+ 
+The typical Artificial Neural Network looks something like the given figure.  
+ 
+ 
+Dendrites from Biological Neural Network represent inputs in Artificial Neural Networks, cell nucleus represents 
+Nodes, synapse represents Weights, and Axon represents Output. 
+ 
+Relationship between Biological neural network and artificial neural network: 
+ 
+Biological Neural Network Artificial Neural Network 
+Dendrites Inputs 
+Cell nucleus Nodes 
+Synapse Weights 
+Axon Output 
+ 
+An Artificial Neural Network  in the field of  Artificial intelligence  where it attempts to mimic the network of 
+neurons makes up a human brain so  that computers will have an option to understand things and make decisions in 
+a human-like manner. The artificial neural network is designed by programming computers to behave simply like 
+interconnected brain cells. 
+ 
+There are around 1000 billion neurons in the human brain. Each ne
+================================================================================
+
+Query: What a neural network
+Retrieved Context:
+asing day by day. It means that 
+artificial neural networks will turn into an irreplaceable part of our lives progressively important.” 
+ 
+How do artificial neural networks work? 
+Artificial Neural Network can be best represented as a weighted directed graph, where the artificial 
+neurons form the nodes. The association between the neuron s outputs and neuron inputs can be viewed as the 
+directed edges with weights. The Artificial Neural Network receives the input signal from the external source in the 
+form of a pattern and image in the form of a vector. These inputs are then mathematically assigned by the notations 
+x(n) for every n number of inputs. 
+ 44 
+ 
+ 
+ 
+Afterward, each of the input is multiplied by its corresponding weights ( these  weights are the details 
+utilized by the artificial neural networks to solve a specific problem ). In general terms, these weights normally 
+represent the strength of the interconnection between neurons inside the artificial neural network. All t
+
+---
+
+both the inputs are "Off," then we get "Off" in output. Here the output depends upon input. 
+Our brain does not perform the same task. The outputs to inputs r elationship keep changing because of the neurons 
+in our brain, which are "learning." 
+ 
+The architecture of an artificial neural network: 
+ 
+ 
+ 
+Input Layer: 
+As the name suggests, it accepts inputs in several different formats provided by the programmer.  
+ 
+Hidden Layer: 
+The hidden layer presents in-between input and output layers. It performs all the calculations to find 
+hidden features and patterns. 
+ 
+Output Layer: 
+The input goes through a series of transformations using the hidden layer, which finally resul ts in output 
+that is conveyed using this layer. 
+ 
+The artificial neural network takes input and computes the weighted sum of the inputs and includes a bias. This 
+computation is represented in the form of a transfer function. 
+ 
+ 
+ 
+It determines weighted total  is passed as an input to an activation function to pr
+
+---
+
+. 
+ 41 
+ 
+ 
+ 
+The given figure illustrates the typical diagram of Biological Neural Network.  
+ 
+The typical Artificial Neural Network looks something like the given figure.  
+ 
+ 
+Dendrites from Biological Neural Network represent inputs in Artificial Neural Networks, cell nucleus represents 
+Nodes, synapse represents Weights, and Axon represents Output. 
+ 
+Relationship between Biological neural network and artificial neural network: 
+ 
+Biological Neural Network Artificial Neural Network 
+Dendrites Inputs 
+Cell nucleus Nodes 
+Synapse Weights 
+Axon Output 
+ 
+An Artificial Neural Network  in the field of  Artificial intelligence  where it attempts to mimic the network of 
+neurons makes up a human brain so  that computers will have an option to understand things and make decisions in 
+a human-like manner. The artificial neural network is designed by programming computers to behave simply like 
+interconnected brain cells. 
+ 
+There are around 1000 billion neurons in the human brain. Each ne
+================================================================================
+
+Query: What is a neural network
+Retrieved Context:
+asing day by day. It means that 
+artificial neural networks will turn into an irreplaceable part of our lives progressively important.” 
+ 
+How do artificial neural networks work? 
+Artificial Neural Network can be best represented as a weighted directed graph, where the artificial 
+neurons form the nodes. The association between the neuron s outputs and neuron inputs can be viewed as the 
+directed edges with weights. The Artificial Neural Network receives the input signal from the external source in the 
+form of a pattern and image in the form of a vector. These inputs are then mathematically assigned by the notations 
+x(n) for every n number of inputs. 
+ 44 
+ 
+ 
+ 
+Afterward, each of the input is multiplied by its corresponding weights ( these  weights are the details 
+utilized by the artificial neural networks to solve a specific problem ). In general terms, these weights normally 
+represent the strength of the interconnection between neurons inside the artificial neural network. All t
+
+---
+
+. 
+ 41 
+ 
+ 
+ 
+The given figure illustrates the typical diagram of Biological Neural Network.  
+ 
+The typical Artificial Neural Network looks something like the given figure.  
+ 
+ 
+Dendrites from Biological Neural Network represent inputs in Artificial Neural Networks, cell nucleus represents 
+Nodes, synapse represents Weights, and Axon represents Output. 
+ 
+Relationship between Biological neural network and artificial neural network: 
+ 
+Biological Neural Network Artificial Neural Network 
+Dendrites Inputs 
+Cell nucleus Nodes 
+Synapse Weights 
+Axon Output 
+ 
+An Artificial Neural Network  in the field of  Artificial intelligence  where it attempts to mimic the network of 
+neurons makes up a human brain so  that computers will have an option to understand things and make decisions in 
+a human-like manner. The artificial neural network is designed by programming computers to behave simply like 
+interconnected brain cells. 
+ 
+There are around 1000 billion neurons in the human brain. Each ne
+
+---
+
+-like manner. The artificial neural network is designed by programming computers to behave simply like 
+interconnected brain cells. 
+ 
+There are around 1000 billion neurons in the human brain. Each neuron has an association point somewhere in the 
+range of 1,000 and 100,000. In the human brain, data is stored in such a manner as to be distributed, and we can 
+42 
+ 
+extract more than one piece of this data when necessary from our memo ry parallelly. We can say that the human 
+brain is made up of incredibly amazing parallel processors. 
+ 
+ 
+We can understand the artificial neural network with an example, consider an example of a digital logic gate that 
+takes an input and gives an output. "OR " gate, which takes two inputs. If one or both the inputs are "On," then we 
+get "On" in output. If both the inputs are "Off," then we get "Off" in output. Here the output depends upon input. 
+Our brain does not perform the same task. The outputs to inputs r elationship keep changing because of the
+================================================================================
+
+Query: What is a ANN
+Retrieved Context:
+net input. The function is defined as:  
+F(x) = (1/1 + exp(-????x)) 
+Where ???? is considered the Steepness parameter. 
+ 
+Types of Artificial Neural Network: 
+There are various types of Artificial Neural Networks (ANN) depending upon the human brain neuron and 
+network functions, an artificial neural network similarly performs tasks. The majority of the artificial neural 
+networks will have some similarities with a more complex biol ogical partner and are very effective at their expected 
+tasks. For example, segmentation or classification. 
+ 
+Feedback ANN: 
+In this type of ANN, the output returns into the network to accomplish the best -evolved results internally. 
+As per the  University of Massachusetts, Lowell Centre for Atmospheric Research. The feedback networks feed 
+information back into itself and are well suited to solve optimization issues. The Internal system error corrections 
+utilize feedback ANNs. 
+ 
+Feed-Forward ANN: 
+A feed-forward network is a basic neural network comp
+
+---
+
+asing day by day. It means that 
+artificial neural networks will turn into an irreplaceable part of our lives progressively important.” 
+ 
+How do artificial neural networks work? 
+Artificial Neural Network can be best represented as a weighted directed graph, where the artificial 
+neurons form the nodes. The association between the neuron s outputs and neuron inputs can be viewed as the 
+directed edges with weights. The Artificial Neural Network receives the input signal from the external source in the 
+form of a pattern and image in the form of a vector. These inputs are then mathematically assigned by the notations 
+x(n) for every n number of inputs. 
+ 44 
+ 
+ 
+ 
+Afterward, each of the input is multiplied by its corresponding weights ( these  weights are the details 
+utilized by the artificial neural networks to solve a specific problem ). In general terms, these weights normally 
+represent the strength of the interconnection between neurons inside the artificial neural network. All t
+
+---
+
+data. Problems must be converted into numerical values before being 
+introduced to ANN. The presenta tion mechanism to be resolved here will directly impact the performance of the 
+network. It relies on the user's abilities. 
+ 
+The duration of the network is unknown: 
+The network is reduced to a specific value of the error, and this value does not give us opt imum results. 
+“Science artificial neural networks that have steeped into the world in the mid -20th century are exponentially 
+developing. In the present time, we have investigated the pros of artificial neural networks and the issues 
+encountered in the course of their utilization. It should not be overlooked that the cons of ANN networks, which are 
+a flourishing science branch, are eliminated individually, and their pros are increasing day by day. It means that 
+artificial neural networks will turn into an irreplaceable part of our lives progressively important.” 
+ 
+How do artificial neural networks work? 
+Artificial Neural Ne
+================================================================================
+
+Query: Different layers in ANN
+Retrieved Context:
+both the inputs are "Off," then we get "Off" in output. Here the output depends upon input. 
+Our brain does not perform the same task. The outputs to inputs r elationship keep changing because of the neurons 
+in our brain, which are "learning." 
+ 
+The architecture of an artificial neural network: 
+ 
+ 
+ 
+Input Layer: 
+As the name suggests, it accepts inputs in several different formats provided by the programmer.  
+ 
+Hidden Layer: 
+The hidden layer presents in-between input and output layers. It performs all the calculations to find 
+hidden features and patterns. 
+ 
+Output Layer: 
+The input goes through a series of transformations using the hidden layer, which finally resul ts in output 
+that is conveyed using this layer. 
+ 
+The artificial neural network takes input and computes the weighted sum of the inputs and includes a bias. This 
+computation is represented in the form of a transfer function. 
+ 
+ 
+ 
+It determines weighted total  is passed as an input to an activation function to pr
+
+---
+
+net input. The function is defined as:  
+F(x) = (1/1 + exp(-????x)) 
+Where ???? is considered the Steepness parameter. 
+ 
+Types of Artificial Neural Network: 
+There are various types of Artificial Neural Networks (ANN) depending upon the human brain neuron and 
+network functions, an artificial neural network similarly performs tasks. The majority of the artificial neural 
+networks will have some similarities with a more complex biol ogical partner and are very effective at their expected 
+tasks. For example, segmentation or classification. 
+ 
+Feedback ANN: 
+In this type of ANN, the output returns into the network to accomplish the best -evolved results internally. 
+As per the  University of Massachusetts, Lowell Centre for Atmospheric Research. The feedback networks feed 
+information back into itself and are well suited to solve optimization issues. The Internal system error corrections 
+utilize feedback ANNs. 
+ 
+Feed-Forward ANN: 
+A feed-forward network is a basic neural network comp
+
+---
+
+into itself and are well suited to solve optimization issues. The Internal system error corrections 
+utilize feedback ANNs. 
+ 
+Feed-Forward ANN: 
+A feed-forward network is a basic neural network comprising of an input layer, an output layer, and at least 
+one layer of a neuron. Through assessment of its output by reviewing its input, the intensity of the network can be 
+noticed based on group behavior of the associa ted neurons, and the output is decided. The primary advantage of this 
+network is that it figures out how to evaluate and recognize input patterns.  
+ 
+45 
+ 
+Prerequisite 
+No specific expertise is needed as a prerequisite before starting this tutorial. 
+ 
+Audience 
+Our Artificial Neural Network Tutorial is developed for beginners as well as professionals, to help them 
+understand the basic concept of ANNs. 
+ 
+2.3.2. PERCEPTRONS 
+One type of ANN system is based on a unit called a perceptron, illustrated in below Figure: A 
+perceptron takes a vector of real -valued inputs, c
 ================================================================================
 

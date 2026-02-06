@@ -12,8 +12,8 @@ load_dotenv()
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # Safe Settings for Free Tier
-BATCH_SIZE = 20        # Number of chunks to send at once
-SLEEP_PER_BATCH = 2    # Seconds to wait between batches (avoids 429 errors)
+BATCH_SIZE = 10        # Number of chunks to send at once (reduced for safety)
+SLEEP_PER_BATCH = 10   # Seconds to wait between batches (increased to avoid 429 errors)
 DB_PATH = "./my_vector_store" # Where to save the database on disk
 
 # Setup Logging (Cleaner than print statements)
@@ -57,16 +57,12 @@ def chunk_text(text, max_length=1000, overlap=100):
 # EMBEDDING FUNCTION 
 class GeminiEmbeddingFunction(EmbeddingFunction):
     def __call__(self, input: Documents) -> Embeddings:
-        try:
-            response = client.models.embed_content(
-                model="models/gemini-embedding-001", 
-                contents=input
-            )
-            return [e.values for e in response.embeddings]
-        except Exception as e:
-            logging.error(f" Embedding API Error: {e}")
-            # Return empty embeddings to avoid crashing the whole DB
-            return [[] for _ in input] 
+        # Don't silently fail - let exceptions propagate
+        response = client.models.embed_content(
+            model="models/gemini-embedding-001", 
+            contents=input
+        )
+        return [e.values for e in response.embeddings] 
 
 # DATABASE MANAGEMENT
 def get_or_create_db(collection_name):
@@ -87,22 +83,34 @@ def ingest_data(collection, chunks):
 
     logging.info(f" Starting ingestion of {len(chunks)} chunks...")
     
-    # Batch processing loop
+    # Chunk Batch processing 
     total_batches = (len(chunks) + BATCH_SIZE - 1) // BATCH_SIZE
     
     for i in range(0, len(chunks), BATCH_SIZE):
         batch = chunks[i:i + BATCH_SIZE]
         ids = [f"id_{i+j}" for j in range(len(batch))]
         
-        try:
-            collection.add(documents=batch, ids=ids)
-            logging.info(f"   Indexed batch {i//BATCH_SIZE + 1}/{total_batches}")
-            
-            # CRITICAL: Sleep to respect rate limits
-            time.sleep(SLEEP_PER_BATCH)
-            
-        except Exception as e:
-            logging.error(f" Failed to ingest batch {i}: {e}")
+        retries = 0
+        max_retries = 3
+        
+        while retries < max_retries:
+            try:
+                collection.add(documents=batch, ids=ids)
+                logging.info(f"   Indexed batch {i//BATCH_SIZE + 1}/{total_batches}")
+                
+                # CRITICAL: Sleep to respect rate limits
+                time.sleep(SLEEP_PER_BATCH)
+                break  # Success, exit retry loop
+                
+            except Exception as e:
+                retries += 1
+                if retries >= max_retries:
+                    logging.error(f" Failed to ingest batch {i} after {max_retries} retries: {e}")
+                    logging.error(" STOPPING INGESTION - Database would be corrupted!")
+                    return  # Stop ingestion to prevent corrupted data
+                else:
+                    logging.warning(f" Retry {retries}/{max_retries} for batch {i} after error: {e}")
+                    time.sleep(SLEEP_PER_BATCH * 2)  # Wait longer on retry
 
     logging.info(" Ingestion Complete!")
 
@@ -144,7 +152,7 @@ def query_and_answer(collection, query):
     
     try:
         response = client.models.generate_content(
-            model="gemini-2.5-flash-lite", 
+            model="models/gemini-2.5-flash-lite", 
             contents=prompt
         )
         
