@@ -1,0 +1,53 @@
+Query: Advantages of Artificial Neural Network (ANN) 
+Retrieved Context:
+cation of a case. 
+(i) The Results are Simplistic 
+The interpretation of results summarized in classification or regression trees is usually fairly simple. The 
+simplicity of results helps in the following ways. 
+ It allows for the rapid classification of new observations. That’s because it is much simpler to 
+evaluate just one or two logical conditions than to compute scores using complex nonlinear 
+equations for each group. 
+ It can often result in a simpler model which  explains why the observations are either classified 
+or predicted in a certain way. For instance, business problems are much easier to explain with 
+if-then statements than with complex nonlinear equations. 
+(ii) Classification and Regression Trees are Nonparametric & Nonlinear 
+The results from classification and regression trees can be summarized in simplistic if -then conditions. 
+This negates the need for the following implicit assumptions. 
+ The predictor variables and the dependent variable are linear. 
+ Th
+
+---
+
+ession trees can be summarized in simplistic if -then conditions. 
+This negates the need for the following implicit assumptions. 
+ The predictor variables and the dependent variable are linear. 
+ The predictor variables and the dependent variable follow some specific nonlinear link function. 
+ The predictor variables and the dependent variable are monotonic. 
+Since there is no need for such implicit assumptions, classification and regression tree methods a re well 
+suited to data mining. This is because there is very little knowledge or assumptions that can be made 
+beforehand about how the different variables are related. 
+As a result, classification and regression trees can actually reveal relationships betwe en these variables 
+that would not have been possible using other techniques. 
+(iii) Classification and Regression Trees Implicitly Perform Feature Selection 
+Feature selection or variable screening is an important part of analytics. When we use decision tree s, 
+the top few
+
+---
+
+. 
+(iii) Classification and Regression Trees Implicitly Perform Feature Selection 
+Feature selection or variable screening is an important part of analytics. When we use decision tree s, 
+the top few nodes on which the tree is split are the most important variables within the set. As a result, 
+feature selection gets performed automatically and we don’t need to do it again. 
+Limitations of Classification and Regression Trees 
+31 
+ 
+Classification and regression tree tutorials, as well as classification and regression tree ppts, exist in 
+abundance. This is a testament to the popularity of these decision trees and how frequently they are 
+used. However, these decision trees are not without their disadvantages. 
+There are many classification and regression trees examples where the use of a decision tree has not 
+led to the optimal result. Here are some of the limitations of classification and regression trees. 
+(i) Overfitting 
+Overfitting occurs when the tree takes into account a lot of
+================================================================================
+

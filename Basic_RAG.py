@@ -1,129 +1,3 @@
-# from google import genai
-# from dotenv import load_dotenv
-# import os
-# from pypdf import PdfReader
-# import os
-# import chromadb
-# from chromadb import Documents, EmbeddingFunction, Embeddings
-# from google import genai
-
-# load_dotenv()
-
-# client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-
-# def chunk (text , max_length):
-#     f=[]
-#     for i in range(0, len(text), max_length):
-#         if i > 0:
-#             f.append(text[i-50:i].strip())  # Add 50 characters of overlap for context
-#         else:
-#             f.append(text[i:i+max_length].strip())
-#     return f
-
-
-# # This class teaches ChromaDB how to use Gemini
-# class GeminiEmbeddingFunction(EmbeddingFunction):
-#     def __init__(self):
-#         pass
-    
-#     def __call__(self, input: Documents) -> Embeddings:
-#         # We send all the text chunks to Google at once
-#         response = client.models.embed_content(
-#             model="models/gemini-embedding-001",
-#             contents=input
-#         )
-#         # We extract just the vectors from the response
-#         return [e.values for e in response.embeddings]
-
-# #  SETUP DATABASE 
-# def setup_db(name, chunks):
-#     # Create an in-memory database (resets when script stops)
-#     db = chromadb.Client()
-
-#     # Create a collection using our custom Gemini function
-#     collection = db.create_collection(
-#         name=name,
-#         embedding_function=GeminiEmbeddingFunction()
-#     )
-
-#     # 3. Add data in a collection
-#     print("Adding documents...")
-#     collection.add(
-#         documents=chunks,
-#         ids=[str(i) for i in range(len(chunks))]
-#     )
-#     return db, collection
-
-# def query_db(collection, query):
-
-#     print(f"\nQuerying for: '{query}'")
-
-#     results = collection.query(
-#         query_texts=[query],
-#         n_results=3  # We only want the top 3 matches
-#     )
-#     return results
-#     # # Output the result
-#     # print("\n--- RESULT ---")
-#     # print(f"Found Document: {results['documents'][0][0]}")
-#     # print(f"Distance/Score: {results['distances'][0][0]}") 
-
-# def generate_answer(query, results):
-#     response = client.models.generate_content(
-#         model="gemini-flash-latest",
-
-#         #Passing the top 3 retrieved documents as context as 1 document is not sufficient
-#         contents=f"Based on the following document, answer the question:\n\nDocument: {results['documents'][0][0] , results['documents'][0][1] , results['documents'][0][2]}\n\nQuestion: {query}\n\nAnswer:"
-#     )
-#     # print("\n--- GENERATED ANSWER ---")
-#     # print(response.text)
-#     with open("output.txt", "a+", encoding="utf-8") as f:
-#         f.write("Question:\n")
-#         f.write(query)
-#         f.write("\n\nAnswer:\n")
-#         f.write(response.text)
-#         f.write("\n\n" + "="*80 + "\n\n")
-    
-#     print("\n--- GENERATED ANSWER ---")
-#     print(response.text)
-
-# def extract_text_from_pdf(file_path):
-#     book = PdfReader(file_path)
-#     text = ""
-#     for p in book.pages:
-#         text += p.extract_text()
-#     return text
-
-# def main():
-
-#     text=extract_text_from_pdf("MACHINE LEARNING(R17A0534).pdf")
-#     chunks = chunk(text, 3000)
-
-#     name_coll = input("Enter the name of the collection: ")
-#     db, collection = setup_db(name_coll, chunks)
-
-#     q = input("Enter your query: ")
-#     while q.lower() != "exit":
-#         results=query_db(collection, q)
-#         # print("Raw Retrieval Results:", results['documents'][0][0])
-#         generate_answer(q, results)
-#         q = input("\nEnter your next query , Enter 'exit' to quit: ")
-
-# if __name__ == "__main__":
-#     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
 import os
 import time
 import logging
@@ -251,6 +125,12 @@ def query_and_answer(collection, query):
     # Combine top 3 chunks into one context block (Used for better context and rich answers)
     context_text = "\n\n---\n\n".join(results['documents'][0])
     
+    # Save raw retrieved context for manual checking
+    with open("raw_responses.txt", "a+", encoding="utf-8") as f:
+        f.write(f"Query: {query}\n")
+        f.write(f"Retrieved Context:\n{context_text}\n")
+        f.write("=" * 80 + "\n\n")
+    
     # 2. Generate
     prompt = f"""
     You are a helpful teaching assistant. Answer the student's question based ONLY on the provided context.
@@ -264,7 +144,7 @@ def query_and_answer(collection, query):
     
     try:
         response = client.models.generate_content(
-            model="gemini-flash-latest", 
+            model="gemini-2.5-flash-lite", 
             contents=prompt
         )
         

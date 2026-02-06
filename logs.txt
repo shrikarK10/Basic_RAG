@@ -62,3 +62,101 @@
 2026-02-06 11:28:04,320 - ERROR -  Generation Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 55.852881669s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}
 2026-02-06 11:29:00,784 - INFO - User query: exit
 2026-02-06 11:29:00,784 - INFO - User exited the chat.
+2026-02-06 12:01:18,190 - INFO - Read 243723 characters from PDF.
+2026-02-06 12:01:18,212 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-06 12:01:18,783 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
+2026-02-06 12:01:30,693 - INFO - User query: Explain Clustering
+2026-02-06 12:01:30,693 - INFO -  Searching for: 'Explain Clustering'
+2026-02-06 12:01:31,153 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:01:31,189 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:01:31,700 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-02-06 12:01:31,701 - ERROR -  Generation Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 28.427150578s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}
+2026-02-06 12:03:08,711 - INFO - User query: exit
+2026-02-06 12:03:08,712 - INFO - User exited the chat.
+2026-02-06 12:05:13,537 - INFO - Read 243723 characters from PDF.
+2026-02-06 12:05:13,566 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-06 12:05:13,788 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
+2026-02-06 12:05:27,933 - INFO - User query: Explain clustering
+2026-02-06 12:05:27,933 - INFO -  Searching for: 'Explain clustering'
+2026-02-06 12:05:28,373 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:05:28,408 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:05:28,523 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-02-06 12:05:28,526 - ERROR -  Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-02-06 12:07:07,497 - INFO - User query: Explain clustering
+2026-02-06 12:07:07,497 - INFO -  Searching for: 'Explain clustering'
+2026-02-06 12:07:07,952 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:07:07,966 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:07:08,079 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-02-06 12:07:08,081 - ERROR -  Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-02-06 12:07:20,886 - INFO - User query: Explain clustering
+2026-02-06 12:07:20,886 - INFO -  Searching for: 'Explain clustering'
+2026-02-06 12:07:21,326 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:07:21,336 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:07:21,447 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-02-06 12:07:21,448 - ERROR -  Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-02-06 12:07:24,322 - INFO - User query: exit
+2026-02-06 12:07:24,323 - INFO - User exited the chat.
+2026-02-06 12:07:31,828 - INFO - Read 243723 characters from PDF.
+2026-02-06 12:07:31,852 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-06 12:07:32,140 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
+2026-02-06 12:07:49,572 - INFO - Backing off send_request(...) for 1.0s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+2026-02-06 12:08:33,831 - INFO - User query: exit
+2026-02-06 12:08:33,832 - INFO - User exited the chat.
+2026-02-06 12:08:47,196 - INFO - Read 243723 characters from PDF.
+2026-02-06 12:08:47,218 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-06 12:08:47,520 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
+2026-02-06 12:08:51,883 - INFO - User query: Explain clustering
+2026-02-06 12:08:51,883 - INFO -  Searching for: 'Explain clustering'
+2026-02-06 12:08:52,321 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:08:52,363 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:08:53,400 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:08:53,402 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:09:18,908 - INFO - User query: Explain k-means algorithm
+2026-02-06 12:09:18,908 - INFO -  Searching for: 'Explain k-means algorithm'
+2026-02-06 12:09:19,397 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:09:19,410 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:09:20,477 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:09:20,480 - INFO - GEMINI ANSWER: The K-means clustering algorithm uses exemplars to create clusters of similar data points. Exemplars can be either centroids, which find a center of mass based on a chosen distance metric, or medoids, which find the most centrally located data point. The most commonly used centroid is the arithmetic mean, which minimizes the squared Euclidean distance to all other points.
+2026-02-06 12:12:00,112 - INFO - User query: Layers in Neural Networks
+2026-02-06 12:12:00,112 - INFO -  Searching for: 'Layers in Neural Networks'
+2026-02-06 12:12:00,562 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:12:00,580 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:12:01,748 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:12:01,751 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:12:21,600 - INFO - User query: Architecture of a Neural Network
+2026-02-06 12:12:21,601 - INFO -  Searching for: 'Architecture of a Neural Network'
+2026-02-06 12:12:22,090 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:12:22,108 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:12:23,115 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:12:23,119 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:12:40,287 - INFO - User query: Architecture of a Artifical  Neural Network
+2026-02-06 12:12:40,287 - INFO -  Searching for: 'Architecture of a Artifical  Neural Network'
+2026-02-06 12:12:40,716 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:12:40,738 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:12:42,190 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:12:42,193 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:13:22,422 - INFO - User query: The architecture of an artificial neural network
+2026-02-06 12:13:22,423 - INFO -  Searching for: 'The architecture of an artificial neural network'
+2026-02-06 12:13:22,845 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:13:22,853 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:13:23,770 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:13:23,772 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:13:46,138 - INFO - User query: Advantages of Artificial Neural Network (ANN) 
+2026-02-06 12:13:46,139 - INFO -  Searching for: 'Advantages of Artificial Neural Network (ANN) '
+2026-02-06 12:13:46,570 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:13:46,585 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:13:47,429 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:13:47,432 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:15:48,307 - INFO - User query: exit
+2026-02-06 12:15:48,307 - INFO - User exited the chat.
+2026-02-06 12:15:54,013 - INFO - Read 243723 characters from PDF.
+2026-02-06 12:15:54,035 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-02-06 12:15:54,358 - INFO -  Data already exists in DB. Skipping ingestion to save quota.
+2026-02-06 12:16:01,761 - INFO - User query: Advantages of Artificial Neural Network (ANN) 
+2026-02-06 12:16:01,761 - INFO -  Searching for: 'Advantages of Artificial Neural Network (ANN) '
+2026-02-06 12:16:02,203 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-02-06 12:16:02,235 - INFO - AFC is enabled with max remote calls: 10.
+2026-02-06 12:16:03,142 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-02-06 12:16:03,146 - INFO - GEMINI ANSWER: I cannot find the answer in the document.
+2026-02-06 12:17:40,273 - INFO - User query: exit
+2026-02-06 12:17:40,274 - INFO - User exited the chat.

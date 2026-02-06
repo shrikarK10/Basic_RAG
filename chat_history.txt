@@ -1,0 +1,24 @@
+Q: Explain clustering
+A: I cannot find the answer in the document.
+----------------------------------------
+Q: Explain k-means algorithm
+A: The K-means clustering algorithm uses exemplars to create clusters of similar data points. Exemplars can be either centroids, which find a center of mass based on a chosen distance metric, or medoids, which find the most centrally located data point. The most commonly used centroid is the arithmetic mean, which minimizes the squared Euclidean distance to all other points.
+----------------------------------------
+Q: Layers in Neural Networks
+A: I cannot find the answer in the document.
+----------------------------------------
+Q: Architecture of a Neural Network
+A: I cannot find the answer in the document.
+----------------------------------------
+Q: Architecture of a Artifical  Neural Network
+A: I cannot find the answer in the document.
+----------------------------------------
+Q: The architecture of an artificial neural network
+A: I cannot find the answer in the document.
+----------------------------------------
+Q: Advantages of Artificial Neural Network (ANN) 
+A: I cannot find the answer in the document.
+----------------------------------------
+Q: Advantages of Artificial Neural Network (ANN) 
+A: I cannot find the answer in the document.
+----------------------------------------
